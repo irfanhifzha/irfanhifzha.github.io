@@ -22,11 +22,27 @@
 
         /* style tambahan */
 
+        body {
+            font-family: 'InterVariable', sans-serif;
+        }
+
+
         div {
             color: black;
             background-color: white;
             font-family: 'InterVariable', sans-serif;
         }
+
+        h1 {
+            transition: 0.3s ease-in-out;
+        }
+
+        h1:active {
+            color:hsl(212, 100%, 54%);
+            transform: scale(0.98);
+        }
+
+
 
         .img-hover{
             font-family: 'InterVariable', sans-serif;
@@ -38,51 +54,81 @@
             transform: scale(1.05);
         }
 
+
+        .ig{
+            transition: 0.5s ease-in-out;
+        }
+
         .ig:hover{
-            color: black;
+            color: rgb(228, 10, 228);
+            transform: scale(1.3);
         }
     </style>
 </head>
 
-<body>
-    <div class="row">
-        <div class="col-md-12" style="height: 30px;">
-            <p style="color: rgb(171, 171, 171); text-align: center;">
-                index.html - Landing Page
-            </p>
+<body >
+
+    <nav class="navbar" style="padding-left: 20px; background-color:rgb(255, 255, 255); padding-bottom: 0.4px;">
+        <a class="navbar-brand" href="/">
+            <p>index.html</p>
+        </a>
+
+        <div class="me-auto" style="text-align: left;">
+            <p style="font-size: 10px; color: rgb(171, 171, 171);">Ini navbar header.</p>
         </div>
+
+
+        <button class="navbar-toggler btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" style="transform: scale(0.5) translate(0px, -15px); align-items: left;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://irfanhku.framer.website">More UI/UX</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="col-12 col-md-12" style="height: 30px;">
+        <p style="color: rgb(171, 171, 171); text-align: center; font-size: 10px; transform: translate(0, 5px);">
+            Landing Page
+        </p>
     </div>
 
-    <div class="row" style="padding-left: 5px;">
-        <div class="col-md-12" style="background-color: rgb(255, 255, 255);">
-            <h2 style="padding-left: 5px; padding-top: 50px; padding-bottom: 5px; text-align: left; font-weight: 600; font-size: 180px; letter-spacing: -12px; line-height: 170px;">
+    <div class="row" style="padding-left: 5px; margin-right: 12px;">
+        <div class="col-12 col-md-12" style="background-color: rgb(255, 255, 255);">
+            <h1 style="padding: 50px 0px 3vw; text-align: left; font-weight: 600; font-size: 16vw; letter-spacing: -0.4vw; line-height: 0.8;">
                 Welcome to my Portofolio!
-            </h2>
+            </h1>
         </div>
     </div>
-    <br><p>>></p>
 
-    <div class="row" style="padding-bottom: 80px;">
-        <div class="col-md-1" style="background-color: hsl(212, 100%, 54%); height: 35px;"></div>
-        <div class="col-md-7">
-            <h2>Halo, Saya Budi 👋
+    <br><br>
+    <!-- <p style="font-size: 10px; line-height: 1px;"></p> -->
+
+    <div class="row" style="padding-bottom: 45px; margin-right: 12px;">
+        <div class="col-1 col-md-1" style="background-color: hsl(212, 100%, 54%); height: 35px;"></div>
+        <div class="col-7 col-md-7" style="padding-left: 20px;">
+            <h2>Halo, Saya Irfan 👋
                 <span style="margin-left: 3px;">
                     <img src="./PhotoME2.png" style="height: 40px; transform: translateY(-5px); border-radius: 8px;" alt="Foto">
                 </span>
             </h2>
         </div>
-        <div class="col-md-4">
-            <p style="font-weight: 600; color:rgb(171, 171, 171); padding-right: 30px;">
-            <!-- Ini adalah proyek yang saya pernah kerjakan pada tahun 2022-2025. -->
+        <div class="col-4 col-md-4">
+            <p style="font-weight: 400; color:rgb(171, 171, 171); padding-right: 30px; padding-left: 7px;">
             Based in West Java, Indonesia.
             </p>
         </div>
     </div>
 
-
-    <div class="row" style="padding-bottom: 80px;">
-        <div class="col-md-1"></div>
-        <div class="col-md-4" style="padding-right: 55px;">
+    <!-- CONTENT -->
+    <div class="row" style="padding-bottom: 80px;  margin-right: 12px; padding-left: 20px;">
+        <div class="col-0 col-md-1"></div>
+        <div class="col-6 col-md-4" style="padding-right: 55px; margin-bottom: 50px;">
             <h4>Projects</h4>
             <br>
             <h5 style="font-size: medium; font-weight: 600;">
@@ -102,10 +148,10 @@
             Branding Logo Allaxe
             </h5>
             <p style="text-align: left; text-justify: inter-word;">
-                Saya berperan penuh dalam proyek pembuatan logo angkatan 2022-2024 di SMKN 9 Bandung, mulai dari tahap perancangan konsep hingga desain visual akhir.
+                Saya berperan penuh dalam proyek pembuatan logo angkatan 2021-2024 di SMKN 9 Bandung, mulai dari tahap perancangan konsep hingga desain visual akhir.
             </p>
             <a href="https://drive.google.com/file/d/1B7iCaHAquow_MlatS3x-B9nM2yZBVYIX/view?usp=drive_link" target="_blank">
-                <img src="./project2.png" style="height: 150px; border-style: groove; border-radius: 20px; border: 2px solid hsl(212, 100%, 54%)" class="img-hover" alt="Logo_Allaxe">
+                <img src="./project2.png" style="height: 150px; border-style: groove; border-radius: 20px; border: solid hsl(0, 0%, 27%); border-width: 1.8px;" class="img-hover" alt="Logo_Allaxe">
             </a>
             <br><br>
             <p style="text-align: left;">
@@ -113,23 +159,33 @@
             </p>
             <br>
         </div>
-        <div class="col-md-3" style="padding-right: 20px;">
+        <div class="col-5 col-md-3" style="padding-right: 30px;">
             <h4>Artworks</h4>
             <br>
             <h5 style="font-size: medium; font-weight: 600;">
             Packaging Sweetprit
             </h5>
-            <p style="text-align: left; text-justify: inter-word;">Sebenernya produk Sweetprit ini bukan brand asli sih, cuma iseng rebranding kue kering jadi produk original saja.. tapi hasilnya lumayan menurutku.</p>
+            <p style="text-align: left; text-justify: inter-word;">Sebenernya produk Sweetprit ini bukan brand asli, cuma iseng rebranding kue kering jadi produk original saja.. tapi hasilnya lumayan menurutku.</p>
             <img src="./artwork1.png" style="height: 150px;" alt="Packaging_Sweetprit">
             <br><br>
-            <a href="https:instagram.com/irfanhku" target="_blank" style=" text-decoration: none; color:rgb(171, 171, 171)"><span class="ig" style="font-weight: 500; font-size: 18px;">More on Instagram -></span></a>
+            <h5 style="font-size: medium; font-weight: 600;">
+            Instagram Account
+            </h5>
+            <p style="text-align: left; text-justify: inter-word;">gatau sih, instagram dipake buat posting sesuatu hal yang aku ingin aja.</p>
+            <a href="https://instagram.com/irfanhku" target="_blank" style=" text-decoration: none; color:hsl(212, 100%, 54%)"><span class="ig" style="font-weight: 500; font-size: 18px;">More on Instagram -></span></a>
             <br><br>
         </div>
-        <div class="col-md-4" style="padding-right: 10px;">
+        <div class="col-12 col-md-4" style="padding-right: 50px;">
             <h3>
             Ini adalah proyek yang saya pernah kerjakan pada tahun 2022-2025.
             </h3>
         </div>
+    </div>
+
+    <div class="col-12 col-md-12" style="background-color: rgb(255, 255, 255); height: 8vh;">
+        <p style="color:rgb(171, 171, 171); text-align: center;">
+            © 2025 <br> <span style="font-size: 10px;">footer disini.</span>
+        </p>
     </div>
 
 
@@ -138,7 +194,8 @@
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
